@@ -1,0 +1,11 @@
+CREATE DATABASE `db_crud`;
+USE `db_crud`;
+CREATE TABLE IF NOT EXISTS `db_crud`.`cadastro` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome_titular` VARCHAR(60) NOT NULL,
+  `banco` VARCHAR(45) NOT NULL,
+  `agencia` INT NOT NULL,
+  `num_conta` VARCHAR(45) NOT NULL,
+  `tipo_conta` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
